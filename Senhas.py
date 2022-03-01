@@ -1,13 +1,12 @@
 import string
 import random
 
-def geradordesenhas(tamanho);
-    pontos = string.ponctuation
+def geradordesenhas(tamanho):
+    pontos = string.punctuation
     letras = string.ascii_letters
-
-    caracteres = pontos+letras
-
-    senhas = ''.join(random.sample(caracteres, tamanho))
+    caracteres = pontos + letras
+    senha = ''.join(random.sample(caracteres, tamanho))
     return senha
 
-geradordesenhas(15)
+password = geradordesenhas(15)
+print(password)
